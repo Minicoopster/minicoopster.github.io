@@ -1,174 +1,243 @@
+
+<!--
+    Matthew Cooper
+    Project 1 Intro GUI and Graphics
+    27 Jan 2021
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1" name="viewport" charset="utf-8">
     <title>Matthew Cooper's Resume</title>
 </head>
 <body>
-<div class="title" id="top">
-    <h1>Matthew D. Cooper's Resume</h1>
-    <nav>
-        <a href="#contact" style="padding-right: 6px">Contact</a>
-        <a href="#clearance" style="padding-right: 6px">Clearance</a>
-        <a href="#education" style="padding-right: 6px">Education</a>
-        <a href="#work" style="padding-right: 6px">Work</a>
-        <a href="#leadership" style="padding-right: 6px">Leadership</a>
-        <a href="#honors">Honors</a>
-    </nav>
-</div>
+    <div class="page_title" id="top">
 
-<div class="section" id="contact">
-    <h3>Contact</h3>
-    <span><a href="mailto:cmatt98@vt.edu">cmatt98@vt.edu</a></span><br>
-    <span><a href="mailto:minicoopsters@gmail.com">minicoopsters@gmail.com</a></span><br>
-    <span>(703) 850-0182</span><br>
-    <div id="address">
-        <p>
-            222 Old Cedarfield Dr
-            Blacksburg, VA 24060
-        </p>
+        <h1>Matthew Cooper's Resume</h1>
+        
+        <nav>
+            <a href="#contact">Contact</a>
+            <a href="#special_quals">Special Qualifications</a>
+            <a href="#education">Education</a>
+            <a href="#work">Work</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#honors">Honors</a>
+        </nav>
     </div>
-</div>
 
-<div class="section" id="clearance">
-    <h3>Clearance</h3>
-    <span>TS/SCI</span>
-</div>
+    <!--Contact Section-->
+    <section class="resume_section" id="contact">
+        
+        <h3 class="section_heading">Contact</h3>
+        
+        <p id="name">Matthew Cooper</p>
+        
+        <address class="email"><a href="mailto:cmatt98@vt.edu">cmatt98@vt.edu</a></address>
+        <address class="email"><a href="mailto:minicoopsters@gmail.com">minicoopsters@gmail.com</a></address>
+        <address class="phone">703-850-0182</address>
+        <address class="street_address" id="address">
+            <p>
+                222 Old Cedarfield Dr<br>
+                Blacksburg, VA 24060
+            </p>
+        </address>
+    </section>
 
-<div class="section" id="education">
-    <h3>Education</h3>
-    <ul>
-        <li>Major: B.S. Computer Science</li>
-        <li>Minors in Leadership and Leadership and Service</li>
-        <li>School: Virginia Tech</li>
-        <li>2016-Present; 3.52 GPA</li>
-    </ul>
-</div>
+    <!--Special Stuff Section-->
+    <section class="resume_section" id="special_quals">
+        
+        <h3 class="section_heading">Special Qualifications</h3>
+        
+        <div class="resume_sub_section" id="clearance">
+            
+            <h4 class="sub_section_heading">Clearance</h4>
+            
+            <p>TS/SCI</p>
+        </div>
+        
+        <div class="resume_sub_section" id="software_proficiencies">
+            
+            <h4 class="sub_section_heading">Software Development Proficencies</h4>
+            
+            <ul class="coding_skills_list">
+                
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>MongoDB</li>
+                <li>Scripting in Windows and Linux</li>
+                <li>TensorFlow</li>
+                <li>MATLAB</li>
+                <li>R</li>
 
-<div class="section" id="work">
-    <h3>Work</h3>
-    <ul>
-        <li>Experience with Python, Tensorflow, Java, JavaScript, HTML, CSS, Node.js, MongoDB</li>
-        <li>Undergraduate Researcher January 2020 - Present</li>
-        <li style="list-style-type: none">
-            <ul>
-                <li>Machine Learning and AI subject matter expert</li>
-                <li>Manages 50,000+ samples of data using Python</li>
-                <li>Daily leveraging Tensorflow to build classifying AI for signal identification</li>
-                <li>Integrating Python and MatLab code to create simulations for research</li>
             </ul>
-        </li>
-        <li>Undergraduate Teaching Assistant January 2021 - Present</li>
-        <li style="list-style-type: none">
-            <ul>
-                <li>TA for 4000 level theory course</li>
-                <li>Holds office hours to tutor students</li>
-                <li>Grades assignments with attention to detail</li>
-                <li>Works in fast paced environment to minimize delays</li>
-            </ul>
-        </li>
-        <li>Virginia Tech Housing and Residence Life Resident Advisor August 2019 - December 2019</li>
-        <li style="list-style-type: none">
-            <ul>
-                <li>Supervised community of 1100+ students</li>
-                <li>Provided mental and emotional resources</li>
-                <li>Managed 10+ crisis moments with leadership and response resources</li>
-            </ul>
-        </li>
-        <li>National Geospatial-Intelligence Agency Summer/Winter 2017 - Winter 2019</li>
-        <li style="list-style-type: none">
-            <ul>
-                <li>Cyber Assessment Technician/Security Control Assessor</li>
-                <li>Assessed agency programs for vulnerabilities based on NIST and Intelligence Community standards</li>
-                <li>Specialized in risk calculation and risk acceptance in the risk management framework</li>
-                <li>Thoroughly evaluated and revised training pipeline for other Assessors</li>
-                <li>Worked with different agencies to coordinate join event; Made connections and bridged cultures</li>
-            </ul>
-        </li>
-        <li>Synergy Business Innovations and Solutions Summer 2016</li>
-        <li style="list-style-type: none">
-            <ul>
-                <li>Full Stack Web Developer</li>
-                <li>Worked on website for commercial use</li>
-                <li>Connected a SQL database to front end webpage</li>
-            </ul>
-        </li>
-    </ul>
-</div>
 
-<div class="section" id="leadership">
-    <h3>Leadership</h3>
-    <ul>
-        <li>Virginia Tech Corps of Cadets</li>
-        <li>Undergraduate Researcher January 2020 - Present</li>
-        <li style="list-style-type: none">
+        </div>
+    </section>
+
+    <!--Education Section-->
+    <section class="resume_section" id="education">
+        
+        <h3 class="section_heading">Education</h3>
+        
+        <ul class="education_list">
+            
+            <li>Major: B.S. Computer Science</li>
+            <li>Minors: Leadership & Leadership and Service</li>
+            <li>School: Virginia Tech</li>
+            <li>GPA: 3.52</li>
+
+        </ul>
+    </section>
+
+    <!--Work Section-->
+    <section class="resume_section" id="work">
+        
+        <h2 class="section_heading">Work</h2>
+        
+        <ul class="job_list">
+            
+            <li class="job_entry">
+                Undergraduate Researcher January 2020 - Present
+                <ul>
+                    <li>Machine Learning and AI subject matter expert</li>
+                    <li>Manages 50,000+ samples of data using Python</li>
+                    <li>Daily leveraging Tensorflow to build classifying AI for signal identification</li>
+                    <li>Integrating Python and MatLab code to create simulations for research</li>
+                </ul>
+            </li>
+            
+            <li class="job_entry">
+                Undergraduate Teaching Assistant January 2021 - Present
+                <ul>
+                    <li>TA for 4000 level theory course</li>
+                    <li>Holds office hours to tutor students</li>
+                    <li>Grades assignments with attention to detail</li>
+                    <li>Works in fast paced environment to minimize delays</li>
+                </ul>
+            </li>
+            
+            <li class="job_entry">
+                Virginia Tech Housing and Residence Life Resident Advisor August 2019 - December 2019
+                <ul>
+                    <li>Supervised community of 1100+ students</li>
+                    <li>Provided mental and emotional resources</li>
+                    <li>Managed 10+ crisis moments with leadership and response resources</li>
+                </ul>
+            </li>
+            
+            <li class="job_entry">
+                National Geospatial-Intelligence Agency Summer/Winter 2017 - Winter 2019
+                <ul>
+                    <li>Cyber Assessment Technician/Security Control Assessor</li>
+                    <li>Assessed agency programs for vulnerabilities based on NIST and Intelligence Community standards</li>
+                    <li>Specialized in risk calculation and risk acceptance in the risk management framework</li>
+                    <li>Thoroughly evaluated and revised training pipeline for other Assessors</li>
+                    <li>Worked with different agencies to coordinate join event; Made connections and bridged cultures</li>
+                </ul>
+            </li>
+            
+            <li class="job_entry">
+                Synergy Business Innovations and Solutions Summer 2016
+                <ul>
+                    <li>Full Stack Web Developer</li>
+                    <li>Worked on website for commercial use</li>
+                    <li>Connected a SQL database to front end webpage</li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+
+    <!--Leadership Section-->
+    <section class="resume_section" id="leadership">
+
+        <h3 class="section_heading">Leadership</h3>
+
+        <div class="resume_sub_section" id="VTCC_leadership">
+            
+            <h4 class="sub_section_heading">Virginia Tech Corps of Cadets</h4>
+            
             <ul>
+                
                 <li>Company Commander Fall 2019; Responsible for training/discipline of 59 cadets</li>
-                <li>3rd Battalion IG NCOIC Fall 2018; Responsible for battalion inspections and training of 18
+                <li>
+                    3rd Battalion IG NCOIC Fall 2018; Responsible for battalion inspections and training of 18
                     inspectors
                 </li>
                 <li>Platoon Sergeant Spring 2019; Responsible for training and evaluation of 20+ cadets</li>
                 <li>Cadre Squad Leader Fall 2018; Responsible for training of 7 cadets</li>
-                <li>Company Staff Officer 2017-2019; Advised commander on financial and human resources issues and
+                <li>
+                    Company Staff Officer 2017-2019; Advised commander on financial and human resources issues and
                     managed $10,000+
                 </li>
                 <li>Member Military Band 2016-2020; Part of performance leadership staff during 2018-2019</li>
+
             </ul>
-        </li>
-        <li>Air Force Reserve Officer Training Corps</li>
-        <li style="list-style-type: none">
+        </div>
+
+        <div class="resume_sub_section" id="AFROTC_leadership">
+            
+            <h4 class="sub_section_heading">Air Force Reserve Officer Training Corps</h4>
+            
             <ul>
-                <li>Military Operations in Urban Terrain Expert Fall 2020; Planned immersive training event for 300+
+                
+                <li>
+                    Military Operations in Urban Terrain Expert Fall 2020; Planned immersive training event for 300+
                     Airmen
                 </li>
-                <li>Wing Academics Officer Spring 2020; Provided tutoring and extra-circular leadership and historical
+                <li>
+                    Wing Academics Officer Spring 2020; Provided tutoring and extra-circular leadership and historical
                     topics
                 </li>
-                <li>Wing Logistics Commander Spring 2019; Provided and managed Wing resources for multiple large scale
+                <li>
+                    Wing Logistics Commander Spring 2019; Provided and managed Wing resources for multiple large scale
                     events
                 </li>
                 <li>Wing Logistics Vice Commander Fall 2018</li>
                 <li>Flight Field Training Preparation Officer Fall 2018</li>
                 <li>Squadron Physical Fitness Officer Spring 2021, Spring 2018</li>
                 <li>Element Leader Fall 2017</li>
+
             </ul>
-        </li>
-        <li>Lutheran Outreach at Virginia Tech</li>
-        <li style="list-style-type: none">
+        </div>
+
+        <div class="resume_sub_section" id="LOVT_leadership">
+            
+            <h4 class="sub_section_heading">Lutheran Outreach at Virginia Tech</h4>
+            
             <ul>
+                
                 <li>President May 2020 - Present</li>
                 <li>Chair of Activities May 2019 - May 2020</li>
                 <li>Chair of Outreach May 2018 - May 2019</li>
                 <li>Secretary/Treasurer May 2017 - May 2018</li>
+
             </ul>
-        </li>
-    </ul>
-</div>
+        </div>
+    </section>
 
-<div class="section" id="honors">
-    <h3>Honors</h3>
-    <ul>
-        <li>Commandant's List Fall 2016 - Spring 2020</li>
-        <li>Commandant's Award Spring 2020</li>
-        <li>Detachment 875 Cadet of the Semester Fall 2016, Fall 2020</li>
-        <li>Ranked Number 1 in Band Company 2017-2018</li>
-        <li>Ranked Top Third in Air Force Wing Fall 2016 - 2020</li>
-        <li>Military Order of the World Wars ROTC Award of Merit for Patriotism and Leadership 2018</li>
-        <li>American Legion ROTC Military Excellence Award for Demonstrated Leadership 2017</li>
-        <li>Emerging Leader Scholarship 2018</li>
-        <li>Eagle Scout 2016</li>
-    </ul>
-</div>
+    <!--Honors Section-->
+    <section class="resume_section" id="honors">
+        
+        <h3 class="section_heading">Honors</h3>
+        
+        <ul>
+            
+            <li>Commandant's List Fall 2016 - Spring 2020</li>
+            <li>Commandant's Award Spring 2020</li>
+            <li>Detachment 875 Cadet of the Semester Fall 2016, Fall 2020</li>
+            <li>Ranked Number 1 in Band Company 2017-2018</li>
+            <li>Ranked Top Third in Air Force Wing Fall 2016 - 2020</li>
+            <li>Military Order of the World Wars ROTC Award of Merit for Patriotism and Leadership 2018</li>
+            <li>American Legion ROTC Military Excellence Award for Demonstrated Leadership 2017</li>
+            <li>Emerging Leader Scholarship 2018</li>
+            <li>Eagle Scout 2016</li>
 
-<button class="topButton"
-        style="position: fixed;
-               bottom: 10px;
-               right: 30px;
-               background-color: cadetblue;
-               border-radius: 12px;
-               border-color: white">
-    <a href="#top" style="color: white; padding: 10px">Back to Top</a>
-</button>
+        </ul>
+    </section>
 
 </body>
 </html>

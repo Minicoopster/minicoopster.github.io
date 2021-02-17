@@ -1,0 +1,185 @@
+/* Matthew Cooper */
+/* 17 Feb 2021 */
+/* Project 2 .css file */
+
+/*
+Setting global defaults to that can be overwritten later.
+This also helps me remember all of the possible tag names
+so I can better write html.
+*/
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol,
+fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Bahnschrift, sans-serif;
+}
+
+/* Overwriting a tag to have no underline and be a different color. */
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Overwriting address tag to have no italics. */
+address, p {
+    font-style: normal;
+    font-family: "Arial Black", sans-serif;
+}
+
+/* Font resize to make ul, h3, h4 more readable. */
+ul {
+    font-size: large;
+}
+
+h3, h4 {
+    font-size: x-large;
+}
+
+/* Following items starting with #top formats the banner */
+#top {
+    display: flex;
+    justify-content: space-between;
+    background-color: ghostwhite;
+    height: 3.5em;
+    line-height: 3.5em;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: solid 1px dimgrey;
+    z-index: 1;
+}
+
+#top h1 {
+    height: inherit;
+    line-height: inherit;
+    padding: 0 0 0 0.5em;
+}
+
+#top h1 a{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.7em;
+    color: black;
+}
+
+#top nav {
+    flex: 1;
+    border-left: solid 1px dimgrey;
+    height: inherit;
+    line-height: inherit;
+    margin-left: 1.5em;
+    padding-left: 1.5em;
+    display: block;
+}
+
+#top ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#top nav ul li {
+    border-left: solid 1px dimgrey;
+    line-height: 1;
+    margin-left: 1em;
+    padding-left: 1em;
+    display: inline-block;
+}
+
+#top nav ul li:first-child {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Sets the sections to be formatted to fit the fixed elements of the page */
+section {
+    display: grid;
+    padding: 2.5em 0 2.5em 0;
+    margin: 0 10% 0 25em;
+    grid-row-gap: 1em;
+    border-bottom: solid 1px black;
+}
+/* Needed ID selector to target top padding */
+#special_quals {
+    padding-top: 5em;
+}
+
+/* This class selector cascades to all the headings affecting more than 2 items. */
+.section_heading {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    color: black;
+}
+
+/* This class selector cascades to all the nested formats affecting more than 2 items. */
+.contact_side_bar {
+    height: 100%;
+    width: 20em;
+    position: fixed;
+    z-index: 0;
+    background-color: grey;
+    display: block;
+    padding: 5em 1.5em 0 1.5em;
+}
+
+#contact img {
+    width: 20em;
+    justify-self: center;
+    padding-top: 5em;
+}
+
+#contact a {
+    font-family: "Arial Black", sans-serif;
+}
+
+/* Handling resizing of the screen to hide nav bar */
+@media screen and (max-width: 1020px) {
+    #top nav {
+        display: none;
+    }
+}
+/* Handling resizing of screen to move the contact info */
+@media screen and (max-width: 800px) {
+    .contact_side_bar {
+        position: fixed;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        padding: 0.5em;
+        height: 12%;
+    }
+
+    #contact img {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        padding: 2.5em 0 2.5em 0;
+        margin: 0 5em;
+        grid-row-gap: 1em;
+        border-bottom: solid 1px black;
+    }
+
+    #honors {
+        margin-bottom: 10em;
+    }
+}

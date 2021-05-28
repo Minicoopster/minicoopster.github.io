@@ -16,7 +16,7 @@ Matthew Cooper
 17 Feb 2021
  */
 
-/*$("#thebutton").click(
+$("#thebutton").click(
     function() {
         let input_string = prompt("Enter 'Hello' or 'Goodbye'.");
     if (input_string === "Hello") {
@@ -34,7 +34,7 @@ Matthew Cooper
     else {
        console.log("Invalid Input");
    }
-});*/
+});
 
 // ================================================================================
 /*
@@ -58,7 +58,7 @@ Matthew Cooper
 17 Feb 2021
  */
 
-$("#thebutton").click(
+/*$("#thebutton").click(
     function() {
         let input_string = prompt("Enter 'Hello' or 'Goodbye'.");
     if (input_string === "Hello") {
@@ -72,4 +72,4 @@ $("#thebutton").click(
     else {
        console.log("Invalid Input");
    }
-});
+});*/

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gloomhaven Tracker</title>
+        <link rel="stylesheet" type="text/css" href="gloomhaven.css">
+        <script type="text/javascript" src="gloomhaven.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <label for="round">Round:</label>
+            <input type="number" name="round" value="1" readonly focusable="false">
+            <button>Next Round</button>
+        </div>
+        <div class="container">
+            <!-- Table for the elements -->
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Strong</td>
+                        <td><img class="strong" id="ice" src="images/ice.png"></img></td>
+                        <td><img class="strong" id="fire" src="images/fire.png"></img></td>
+                        <td><img class="strong" id="leaf" src="images/leaf.png"></img></td>
+                        <td><img class="strong" id="wind" src="images/wind.png"></img></td>
+                        <td><img class="strong" id="light" src="images/light.png"></img></td>
+                        <td><img class="strong" id="ink" src="images/ink.png"></img></td>
+                    </tr>
+                    <tr>
+                        <td>Waning</td>
+                        <td><img class="waning" id="ice" src="images/ice.png"></img></td>
+                        <td><img class="waning" id="fire" src="images/fire.png"></img></td>
+                        <td><img class="waning" id="leaf" src="images/leaf.png"></img></td>
+                        <td><img class="waning" id="wind" src="images/wind.png"></img></td>
+                        <td><img class="waning" id="light" src="images/light.png"></img></td>
+                        <td><img class="waning" id="ink" src="images/ink.png"></img></td>
+                    </tr>
+                    <tr>
+                        <td>Consumed</td>
+                        <td><img class="consumed active" id="ice" src="images/ice.png"></img></td>
+                        <td><img class="consumed active" id="fire" src="images/fire.png"></img></td>
+                        <td><img class="consumed active" id="leaf" src="images/leaf.png"></img></td>
+                        <td><img class="consumed active" id="wind" src="images/wind.png"></img></td>
+                        <td><img class="consumed active" id="light" src="images/light.png"></img></td>
+                        <td><img class="consumed active" id="ink" src="images/ink.png"></img></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

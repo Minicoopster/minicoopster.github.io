@@ -1,0 +1,86 @@
+html {
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #b7410e, black);
+}
+
+body {
+    font-family: "Papyrus", fantasy;
+    color:  gold;
+}
+
+img {
+    border-radius: 50%;
+    width: 10rem;
+    opacity: 25%;
+}
+
+tr {
+    font-size: 3rem;
+}
+
+label {
+    font-size: 4rem;
+    padding: 3rem 0 0 0;
+}
+
+input {
+    font-family: inherit;
+    font-size: 8rem;
+    border: none;
+    font-weight: bolder;
+    pointer-events: none;
+    background-color: transparent;
+    padding: 0 0 0 3rem;
+    color:  inherit;
+    width: 40%;
+}
+
+input:focus,
+input:focus-within {
+    visibility: hidden;
+}
+
+input::selection {
+    background-color: transparent;
+}
+
+table, td {
+    border: 2rem transparent solid;
+    border-collapse: collapse;
+}
+
+button {
+    font-family: inherit;
+    font-size: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    color: inherit;
+    background-color: black;
+}
+
+button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: inherit;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.container {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.active {
+    opacity: 100%;
+}

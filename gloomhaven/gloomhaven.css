@@ -1,14 +1,20 @@
-html {
-    background-image: linear-gradient(to bottom right, #b7410e, black);
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    color:  gold;
+    color: gold;
 }
 
 img {
     border-radius: 50%;
-    width: 10vw;
+    width: 5vw;
     opacity: 25%;
 }
 
@@ -30,7 +36,7 @@ input {
     background-color: transparent;
     padding: 0 0 0 3vw;
     color:  inherit;
-    width: 30%;
+    width: 100%;
     -moz-appearance: textfield;
 }
 
@@ -50,30 +56,46 @@ table, td {
 
 button {
     font-family: inherit;
-    font-size: 3vw;
+    font-size: 2vw;
     padding: 1vw;
-    border: none;
-    border-radius: 20px;
     color: inherit;
+    width: 70%;
+    border-radius: 4px;
     background-color: black;
+    border: none;
+    color: inherit;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
 
-button {
-  border-radius: 4px;
-  background-color: black;
-  border: none;
-  color: inherit;
-  text-align: center;
-  padding: 16px;
-  width: 100%;
-  cursor: pointer;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+.background_image {
+    background-image: url("images/gloomhaven_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
 }
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+}
+
 
 .container {
     display: flex;
     vertical-align: middle;
     justify-content: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
 }
 
 .active {

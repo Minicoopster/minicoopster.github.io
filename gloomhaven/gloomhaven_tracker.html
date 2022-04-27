@@ -5,12 +5,30 @@
         <title>Gloomhaven Tracker</title>
         <link rel="stylesheet" type="text/css" href="gloomhaven.css">
         <script type="text/javascript" src="gloomhaven.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Astloch' rel='stylesheet'>
+        <style>
+            body {
+                font-family: 'Astloch';
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <label for="round">Round:</label>
-            <input type="number" name="round" value="1" readonly focusable="false">
-            <button>Next Round</button>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="round">Round:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="round" value="1" readonly focusable="false">
+                        </td>
+                        <td>
+                            <button>Next Round</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="container">
             <!-- Table for the elements -->

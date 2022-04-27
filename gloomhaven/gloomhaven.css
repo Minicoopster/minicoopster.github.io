@@ -3,35 +3,34 @@ html {
 }
 
 body {
-    font-family: "Papyrus", fantasy;
     color:  gold;
 }
 
 img {
     border-radius: 50%;
-    width: 10rem;
+    width: 10vw;
     opacity: 25%;
 }
 
 tr {
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 label {
-    font-size: 4rem;
-    padding: 3rem 0 0 0;
+    font-size: 4vw;
+    padding: 3vw 0 0 0;
 }
 
 input {
     font-family: inherit;
-    font-size: 8rem;
+    font-size: 8vw;
     border: none;
     font-weight: bolder;
     pointer-events: none;
     background-color: transparent;
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 3vw;
     color:  inherit;
-    width: 40%;
+    width: 30%;
     -moz-appearance: textfield;
 }
 
@@ -45,14 +44,14 @@ input::selection {
 }
 
 table, td {
-    border: 2rem transparent solid;
+    border: 2vw transparent solid;
     border-collapse: collapse;
 }
 
 button {
     font-family: inherit;
-    font-size: 3rem;
-    padding: 1rem;
+    font-size: 3vw;
+    padding: 1vw;
     border: none;
     border-radius: 20px;
     color: inherit;
@@ -65,12 +64,9 @@ button {
   border: none;
   color: inherit;
   text-align: center;
-  font-size: 32px;
   padding: 16px;
-  width: 220px;
-  transition: all 0.5s;
+  width: 100%;
   cursor: pointer;
-  margin: 36px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
 
@@ -78,7 +74,6 @@ button {
     display: flex;
     vertical-align: middle;
     justify-content: center;
-    margin: 3rem 0;
 }
 
 .active {

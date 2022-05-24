@@ -25,18 +25,14 @@ function newRound() {
     console.log(waning)
     strong.forEach((elem, index) => {
         elem.className = elem.className.replace(" active", "");
-        if (index % 2 == 0) {
-            document.querySelectorAll("#" + elem.id + ".waning")
-                .forEach(img => img.className += " active");
-            }
+        document.querySelectorAll("#" + elem.id + ".waning")
+            .forEach(img => img.className.contains("active") ? pass : img.className += " active");
     });
 
     waning.forEach((elem, index) => {
         elem.className = elem.className.replace(" active", "");
-        if (index % 2 == 0) {
-            document.querySelectorAll("#" + elem.id + ".consumed")
-                .forEach(img => img.className += " active");
-        }
+        document.querySelectorAll("#" + elem.id + ".consumed")
+            .forEach(img => img.className.contains("active") ? pass : img.className += " active");
     });
 }
 

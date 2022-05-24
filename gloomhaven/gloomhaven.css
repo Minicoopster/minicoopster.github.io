@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  background-color: black;
 }
 
 * {
@@ -18,8 +19,9 @@ img {
     opacity: 25%;
 }
 
-tr {
+tr, span {
     font-size: 3vw;
+    place-self: center;
 }
 
 label {
@@ -88,7 +90,6 @@ button {
     z-index: 2;
     width: 80%;
 }
-
 
 .container {
     display: flex;

@@ -24,6 +24,10 @@ tr, span {
     place-self: center;
 }
 
+td {
+   text-align: center;
+}
+
 label {
     font-size: 4vw;
     padding: 3vw 0 0 0;

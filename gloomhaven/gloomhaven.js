@@ -21,19 +21,24 @@ function newRound() {
 
     let strong = document.querySelectorAll("img.strong.active");
     let waning = document.querySelectorAll("img.waning.active");
-    console.log(strong)
-    console.log(waning)
+    let waningIds = new Set();
+    let consumedIds = new Set();
+    
     strong.forEach((elem, index) => {
         elem.className = elem.className.replace(" active", "");
-        document.querySelectorAll("#" + elem.id + ".waning")
-            .forEach(img => img.className.contains("active") ? pass : img.className += " active");
+        waningIds.add(elem.id);
     });
+
+    waningIds.forEach(id =>
+        document.querySelectorAll("#" + id + ".waning").forEach(img => img.className += " active"));
 
     waning.forEach((elem, index) => {
         elem.className = elem.className.replace(" active", "");
-        document.querySelectorAll("#" + elem.id + ".consumed")
-            .forEach(img => img.className.contains("active") ? pass : img.className += " active");
+        consumedIds.add(elem.id);
     });
+
+    consumedIds.forEach(id =>
+        document.querySelectorAll("#" + id + ".consumed").forEach(img => img.className += " active"));
 }
 
 function clickNext(event) {
